@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import date
-import plotly.express as px
+import plotly as px
 
 # ─── FIX SSL RED CORPORATIVA DANONE ────────────────────────────────────────
 import httpx
