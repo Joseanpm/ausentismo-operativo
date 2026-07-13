@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import date
 import plotly.express as px
+from streamlit_autorefresh import st_autorefresh
 
 # ─── FIX SSL RED CORPORATIVA DANONE ────────────────────────────────────────
 import httpx
@@ -21,6 +22,7 @@ httpx.AsyncClient.__init__ = _async_no_ssl
 from supabase import create_client
 
 st.set_page_config(page_title="Ausentismo Operativo", page_icon="📋", layout="centered")
+st_autorefresh(interval=10 * 60 * 1000, silent=True)
 
 # CSS mobile-friendly: tablas scroll horizontal, botones full width en celu
 st.markdown("""
