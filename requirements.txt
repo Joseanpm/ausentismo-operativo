@@ -3,4 +3,4 @@ pandas
 plotly
 supabase
 httpx
-streamlit-autorefresh
+openpyxl
